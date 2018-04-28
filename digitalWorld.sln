@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "digitalWorld", "digitalWorld\digitalWorld.csproj", "{CA9D5048-792A-46DD-90B9-9A289978B409}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "digitalWorld.Tests", "digitalWorld.Tests\digitalWorld.Tests.csproj", "{E2B6FE2E-440A-4B15-8A76-2E732376F771}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA9D5048-792A-46DD-90B9-9A289978B409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA9D5048-792A-46DD-90B9-9A289978B409}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA9D5048-792A-46DD-90B9-9A289978B409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA9D5048-792A-46DD-90B9-9A289978B409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2B6FE2E-440A-4B15-8A76-2E732376F771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2B6FE2E-440A-4B15-8A76-2E732376F771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2B6FE2E-440A-4B15-8A76-2E732376F771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2B6FE2E-440A-4B15-8A76-2E732376F771}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {806CD050-63E0-4A45-86FD-18F031D51CBB}
+	EndGlobalSection
+EndGlobal
