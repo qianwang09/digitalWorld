@@ -6,9 +6,11 @@
 <div class="row">
     <div class="col-md-4">
         <h2>Getting started</h2>
-        <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach
-        a broad range of clients, including browsers and mobile devices. ASP.NET Web API
-        is an ideal platform for building RESTful applications on the .NET Framework.</p>
+        <p>
+            ASP.NET Web API is a framework that makes it easy to build HTTP services that reach
+            a broad range of clients, including browsers and mobile devices. ASP.NET Web API
+            is an ideal platform for building RESTful applications on the .NET Framework.
+        </p>
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301870">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
@@ -21,4 +23,34 @@
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
     </div>
+    <input type="file" id="file1" />
+    <input type="button" value="submit" id="submit" />
+
 </div>
+<script>
+    $("#submit").click(function () {
+        debugger
+        var formData = new FormData();
+        formData.append("file", $("#file1")[0].files[0]);
+        $.ajax({
+            url: "/digitalWorld/BaiduAPI/Speech/AsrData",
+            type: 'POST',
+            cache: false,
+            data: formData,
+            processData: false,
+            contentType: false,
+            dataType: "json",
+            beforeSend: function () {
+            },
+
+            success: function (data) {
+                debugger
+                if (data.err_no == 0) {
+                    console.log(data.result)
+                } else {
+                    console.log(data.err_msg)
+                }
+            }
+        });
+    })
+</script>

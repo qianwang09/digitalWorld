@@ -16,7 +16,7 @@ namespace digitalWorld
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "BaiduAPI/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
         }
